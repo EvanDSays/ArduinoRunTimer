@@ -52,7 +52,7 @@ String formatMilli(long mil){
   else{
     h = mil/1000/60/60;
     m = mil/1000/60 - (h*60);
-    s = mil/1000 - (m*60);
+    s = mil/1000 - (m*60) - (h*60*60);
     if(s>9) return (String)h + ":" + m + ":" + s;  
     else    return (String)h + ":" + m + ":0" + s;  
   }
