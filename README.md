@@ -21,7 +21,7 @@ Here are the steps to get it working:
 1. Place the shield on top of the Arduino Uno and push the pins in place
 2. Plug the Arduino into your computer using the USB 2.0 cable
 3. Install the [Arduino IDE](https://www.arduino.cc/en/software)
-4. Add the LiquidCrystal library (Sketch -> Include LIbrary -> Manage Libaries)
+4. Add the [LiquidCrystal library](https://www.arduino.cc/reference/en/libraries/liquidcrystal/) via the IDE (Sketch -> Include LIbrary -> Manage Libaries)
 5. Grab the [code I provided in this repo](https://github.com/EvanDSays/ArduinoRunTimer/blob/main/ArduinoRunTimer.ino) and edit the line shown below to match your LED pin-outs for your board ([more info here](https://www.arduino.cc/reference/en/libraries/liquidcrystal/liquidcrystal/))
   ```cpp
   LiquidCrystal lcd(8, 9, 4, 5, 6, 7);  
