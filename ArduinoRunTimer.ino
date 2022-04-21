@@ -102,7 +102,10 @@ void loop() {
   
   //If SELECT or LEFT are pressed and it is not paused, start a new run
   else if (not paused and (buttonNum == btnSELECT or buttonNum == btnLEFT)) {
+    
     runCounter++;
+
+    lcd.clear(); //clear the screen
 
     //print run number
     lcd.setCursor(0, 0);
