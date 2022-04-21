@@ -10,7 +10,6 @@ long runStartTime = 0; //Keeps track of when each run starts
 long pauseStartTime = 0; //Keeps track of when the device is paused
 long pauseMillis = 0; //The amount of milliseconds that the device has been paused
 
-
 #define btnRIGHT  0
 #define btnUP     1
 #define btnDOWN   2
@@ -20,14 +19,12 @@ long pauseMillis = 0; //The amount of milliseconds that the device has been paus
 int read_LCD_buttons()
 {
  adc_key_in = analogRead(0); //Read the value from the sensor 
- // The buttons when read are centered at these values: 0, 144, 329, 504, 741
- // We add approx 50 to those values and check to see if we are close
  if (adc_key_in > 1000) return btnNONE; // First option for speed reasons since it will be the most likely result
- if (adc_key_in < 50)   return btnRIGHT;  
- if (adc_key_in < 250)  return btnUP; 
- if (adc_key_in < 450)  return btnDOWN; 
- if (adc_key_in < 650)  return btnLEFT; 
- if (adc_key_in < 850)  return btnSELECT;  
+ if (adc_key_in < 60)   return btnRIGHT;  
+ if (adc_key_in < 200)  return btnUP; 
+ if (adc_key_in < 400)  return btnDOWN; 
+ if (adc_key_in < 600)  return btnLEFT; 
+ if (adc_key_in < 800)  return btnSELECT;  
  return btnNONE;  // When all others fail, return this
 }
 
