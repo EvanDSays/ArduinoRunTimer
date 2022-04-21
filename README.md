@@ -32,3 +32,4 @@ Here are the steps to get it working:
 - Press `RST` when you start your first run (it should display Run#1 and both Current and Total clocks will start counting up)
 - Press `SELECT` or `LEFT` when you complete each run
 - Press `DOWN` or `UP` to pause or unpause the device
+- The `RIGHT` button does not do anything
